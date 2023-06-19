@@ -5,16 +5,21 @@
 # Teslo API
 
 1. Instalar dependencias
+
 ```sh
 yarn install
 ```
-1. Clonar el archivo ***.env.template*** y renombrarlo a ***.env***
-2. Cambiar las variables de entorno
-3. Levantar la base de datos
+
+2. Clonar el archivo ***.env.template*** y renombrarlo a ***.env***
+3. Cambiar las variables de entorno
+4. Levantar la base de datos
+
 ```sh
 docker-compose up -d
 ```
-1. Levantar el API
+
+5. Levantar el API
+
 ```sh
 yarn run start:dev
 ```
