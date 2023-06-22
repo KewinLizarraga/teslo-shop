@@ -139,4 +139,14 @@ export class ProductsService {
       'Unexpected error, check server logs',
     );
   }
+
+  // ! Se usar para eliminar todos los productos cuando se aplica los SEED
+  async deleteAllProducts() {
+    const query = this.productRepository.createQueryBuilder('product');
+    try {
+      return await query.delete().where({}).execute();
+    } catch (error) {
+      this.handleDBExceptions(error);
+    }
+  }
 }
