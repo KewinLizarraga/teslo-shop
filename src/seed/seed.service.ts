@@ -15,9 +15,9 @@ export class SeedService {
 
     const products = initialData.products;
 
-    await Promise.all(
-      products.map((product) => this.productService.create(product)),
-    );
+    // await Promise.all(
+    //   products.map((product) => this.productService.create(product)),
+    // );
 
     return true;
   }
